@@ -20,7 +20,9 @@
 
 - Darkmode support
 
-- mode exclusively for the visually impaired (color medicine, color blindness, blind).## Brand Identity
+- mode exclusively for the visually impaired (color medicine, color blindness, blind).
+
+## Brand Identity
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
