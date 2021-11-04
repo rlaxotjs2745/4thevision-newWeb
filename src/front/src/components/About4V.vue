@@ -122,13 +122,11 @@ span b {
 }
 
 .engine-about {
-  margin-top: 3rem;
-  margin-bottom: 2rem;
   text-align: center;
  }
 
 .engine-about .r-desktop {
-  width: 700px;
+  width: 60%;
 }
 
 .engine-about .r-mobile {

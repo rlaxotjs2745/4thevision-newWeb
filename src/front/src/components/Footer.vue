@@ -88,13 +88,13 @@ export default {
 
 .footer-info h6 {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .footer-title p,
 .footer-text-info p {
   opacity: 0.8;
-  font-size: 14px;
+  font-size: 0.8rem !important;
 }
 
 .footer-title p {
@@ -154,7 +154,7 @@ export default {
   }
 
   .footer-info h6 {
-    font-size: 14px;
+    font-size: 1rem;
   }
 
   .footer-info {

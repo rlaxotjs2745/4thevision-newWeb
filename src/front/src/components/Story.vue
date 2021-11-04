@@ -62,6 +62,8 @@ export default {
 .story-content {
   text-align: center;
   background-image: url("../assets/content-bg-01.png");
+  background-image: url("../assets/content-bg-01-01.png");
+  background-image: url("../assets/content-bg-01-02.png");
 }
 
 .story-content span {

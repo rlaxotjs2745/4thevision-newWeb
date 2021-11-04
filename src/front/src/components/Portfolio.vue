@@ -46,7 +46,7 @@
           <div class="portfolio-item"><img src="../assets/portfolio-images/portfolio-03.png"/><p>VO.DOT<br>ICT VR 5 어드밴스드<br>프로젝트 플래닝 기획</p></div>
           <div class="portfolio-item"><img src="../assets/portfolio-images/portfolio-04.png"/><p>“Beat the Bears”<br>스트레오타입<br>한국 전통음악 체험 콘텐츠</p></div>
 
-          <button id="showAllContentButton" class="btn-portfolio-show" v-on:click="ContentsStatus = true" v-if="!ContentsStatus">모든 포트폴리오 펼쳐보기 🎬</button>
+          <button id="showAllContentButton" class="btn-portfolio-show" v-on:click="ContentsStatus = true" v-if="!ContentsStatus">더 많은 포트폴리오가 궁금해요</button>
 
           <div v-if="ContentsStatus">
             <div class="portfolio-item"><img src="../assets/portfolio-images/portfolio-05.png"/><p>KICT VT 카메라<br>장비 R&D</p></div>

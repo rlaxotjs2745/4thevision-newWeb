@@ -57,13 +57,14 @@ export default {
 
 .main-content {
   display: block;
-  padding: 150px 10% 100px 10%;
-  background: #000;
+   /*background: #8e5dff57;*/
+  position: relative;
+  padding: 150px 10% 150px 10%;
   color: #fff;
 }
 
 .story-content {
-  padding: 100px 10% 100px 10%;
+  padding: 200px 10% 200px 10%;
   color: #fff;
 }
 
@@ -81,7 +82,7 @@ export default {
 
 .portfolio-content {
   padding: 100px 10% 100px 10%;
-  background: #c09aff;
+  background: #8e5dff;
   color: #fff;
 }
 
