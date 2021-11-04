@@ -1,0 +1,35 @@
+<template>
+  <div id="app">
+    <header-area id="compHeader" class="header-area"/>
+    <div class="content-area">
+      <router-view/>
+    </div>
+    <footer-area class="footer-area"/>
+    <sns-area/>
+  </div>
+</template>
+
+<script>
+import Header from "@/components/Header"
+import Footer from "@/components/Footer"
+import Sns from "@/components/Sns"
+
+
+export default {
+  components: {
+    'header-area': Header,
+    'footer-area': Footer,
+    'sns-area' : Sns
+  }
+}
+</script>
+
+<style>
+#app {
+  height: 100%;
+  position: relative;
+  min-width: 1400px;
+}
+</style>
+
+<style src="./style/custom.css"></style>
