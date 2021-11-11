@@ -1,5 +1,5 @@
 
-# 4THEVISION Brnad Website
+# 4THEVISION Brand Website
 
 
 또 다른 세계, 또 다른 나와 만나는 메타버스.
