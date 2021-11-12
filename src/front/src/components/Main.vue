@@ -1,51 +1,59 @@
 <template>
-    <div>
-          <p class="sub-title">또 다른 세계, 또 다른 나와 만나는 메타버스,<br/></p>
-          <h1 class="desktop-headline">현실과 가상의 세계가 상호작용하는<br/>세상을 4V Engien이 만들어 갑니다.</h1>
-          <h1 class="mobile-headline">현실과 가상의 세계가<br/>상호작용하는 세상을<br/>4V Engien이<br/>만들어 갑니다.</h1>
-          <div class="btn-main-box">
-            <button class="btn-main btn-main-layout">더 많은 이야기 나누기</button>
-          </div>
-          <div class="m-text-center">
-            <div class="our-story-card">
-              <div>
-                <img src="../assets/ico_mission.svg"/>
-                <p>MISSION</p>
-                <span class="r-desktop">
+  <div>
+    <p class="sub-title">또 다른 세계, 또 다른 나와 만나는 메타버스,<br/></p>
+    <h1 class="desktop-headline">현실과 가상의 세계가 상호작용하는<br/>세상을 4V Engien이 만들어 갑니다.</h1>
+    <h1 class="mobile-headline">현실과 가상의 세계가<br/>상호작용하는 세상을<br/>4V Engien이<br/>만들어 갑니다.</h1>
+    <div class="btn-main-box">
+      <button class="btn-main btn-main-layout"v-on:click="quickMove('compCntct')">더 많은 이야기 나누기</button>
+    </div>
+    <div class="m-text-center">
+      <div class="our-story-card">
+        <div>
+          <img src="../assets/ico_mission.svg"/>
+          <p>MISSION</p>
+          <span class="r-desktop">
               사람들에게 시공간의 한계를 넘어설 수 있는<br>
               도구를 제공하여 만나고, 즐기고, 일하는 방식을<br>
               변화시킵니다.
             </span>
-                <span class="r-mobile">
+          <span class="r-mobile">
               사람들에게 시공간의 한계를<br>넘어설 수 있는 도구를 제공하여<br>
               만나고, 즐기고, 일하는 방식을<br>
               변화시킵니다.
             </span>
-              </div>
-            </div>
-            <div class="our-story-card">
-              <div>
-                <img src="../assets/ico_vision.svg"/>
-                <p>VISION</p>
-                <span>
+        </div>
+      </div>
+      <div class="our-story-card">
+        <div>
+          <img src="../assets/ico_vision.svg"/>
+          <p>VISION</p>
+          <span>
               현실과 가상이 공존하는 세계,<br>
               누구나 소통하고 일과 즐거움을<br>
               누릴 수 있어야 합니다.
           </span>
-              </div>
-            </div>
-          </div>
-      <div class="video-layout">
-        <video autoplay="autoplay" loop="loop" muted>
-          <source src="../assets/main-background.mp4" type="video/mp4">
-        </video>
+        </div>
       </div>
     </div>
+    <div class="video-layout">
+      <video autoplay="autoplay" loop="loop" muted>
+        <source src="../assets/main-background.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "Main.vue"
+  name: "Main.vue",
+  methods: {
+    quickMove(sectionName) {
+      let menuName = sectionName;
+      // section's y position in Home.vue
+      let scrollPoint = document.getElementById(menuName);
+      window.scrollBy (0, scrollPoint.getBoundingClientRect().y);
+    }
+  }
 }
 </script>
 
@@ -96,9 +104,11 @@ export default {
   height: auto;
   z-index: -1;
   overflow: hidden;
+  background: #000;
 }
 
 video {
+  height: 100%;
   filter: brightness(50%);
 }
 
@@ -106,7 +116,19 @@ video {
   margin: 200px 10% 100px 10%;
 }
 
+@media screen and (min-width: 1920px) {
+  video {
+    width: 100%;
+    height: auto;
+  }
+}
+
 @media screen and (max-width: 768px) {
+
+  .main-content {
+    height: auto !important;
+    padding-bottom: 100px !important;
+  }
 
   .mobile-headline {
     display: block;
@@ -142,10 +164,12 @@ video {
     height: 100%;
     background: #37474f;
   }
+
   video {
     position: absolute;
     top: 0px;
     left: 0px;
+    width: auto;
     height: 100%;
     z-index: -1;
     overflow: hidden;
