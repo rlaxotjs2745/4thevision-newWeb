@@ -4,7 +4,7 @@
     <h1 class="desktop-headline">현실과 가상의 세계가 상호작용하는<br/>세상을 4V Engien이 만들어 갑니다.</h1>
     <h1 class="mobile-headline">현실과 가상의 세계가<br/>상호작용하는 세상을<br/>4V Engien이<br/>만들어 갑니다.</h1>
     <div class="btn-main-box">
-      <button class="btn-main btn-main-layout"v-on:click="quickMove('compCntct')">더 많은 이야기 나누기</button>
+      <button class="btn-main btn-main-layout">더 많은 이야기 나누기</button>
     </div>
     <div class="m-text-center">
       <div class="our-story-card">
@@ -45,15 +45,7 @@
 
 <script>
 export default {
-  name: "Main.vue",
-  methods: {
-    quickMove(sectionName) {
-      let menuName = sectionName;
-      // section's y position in Home.vue
-      let scrollPoint = document.getElementById(menuName);
-      window.scrollBy (0, scrollPoint.getBoundingClientRect().y);
-    }
-  }
+  name: "Main.vue"
 }
 </script>
 
@@ -124,11 +116,6 @@ video {
 }
 
 @media screen and (max-width: 768px) {
-
-  .main-content {
-    height: auto !important;
-    padding-bottom: 100px !important;
-  }
 
   .mobile-headline {
     display: block;
