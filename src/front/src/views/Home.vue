@@ -7,8 +7,7 @@
     <!-- story content section -->
     <story-content id="compStry" class="story-content"/>
 
-    <!-- about vn engine -->
-    <about-4v-content id="compAbt4v" class="about4v-content"/>
+   <our-service-content id="compService" class="our-services-content"/>
 
     <!-- tech -->
     <our-tech-content id="compTech" class="our-tech-content"/>
@@ -31,7 +30,7 @@
 <script>
 import Main from "../components/Main"
 import Story from "../components/Story"
-import About4V from "../components/About4V"
+import OurServices from "@/components/OurServices"
 import OurTech from "../components/OurTech"
 import Portfolio from "../components/Portfolio"
 import History from "../components/History"
@@ -43,7 +42,7 @@ export default {
   components: {
     'head-content' : Main,
     'story-content' : Story,
-    'about-4v-content' : About4V,
+    'our-service-content': OurServices,
     'our-tech-content' : OurTech,
     'portfolio-content' : Portfolio,
     'our-history' : History,
@@ -58,20 +57,22 @@ export default {
 .main-content {
   display: block;
   position: relative;
-  height: 900px;
-  padding: 150px 10% 0px 10%;
+  height: 800px;
+  padding: 85px 10% 100px 10%;
+  background: #37474f;
   color: #fff;
 }
 
 .story-content {
-  padding: 200px 10% 200px 10%;
+  padding: 100px 10% 100px 10%;
   color: #fff;
 }
 
-.about4v-content {
+.our-services-content {
+  text-align: center;
   padding: 100px 10% 100px 10%;
-  background: #FAFAFA;
-  color: #37474f;
+  background: #292929;
+  color: #fff;
 }
 
 .our-tech-content {

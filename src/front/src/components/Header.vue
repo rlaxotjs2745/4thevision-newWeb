@@ -8,6 +8,7 @@
     <div class="menu">
       <button v-on:click="quickMove('compMain')">Main</button>
       <button v-on:click="quickMove('compAbt4v')">About</button>
+      <button v-on:click="quickMove('compService')">Services</button>
       <button v-on:click="quickMove('compTech')">Tech</button>
       <button v-on:click="quickMove('compPtf')">Portfolio</button>
       <button v-on:click="quickMove('compHsty')">History</button>
@@ -32,6 +33,7 @@
       <p class="quick-menu-title">QUICK MENU</p>
       <button v-on:click="quickMove('compMain')">Main</button>
       <button v-on:click="quickMove('compAbt4v')">About</button>
+      <button v-on:click="quickMove('compService')">Services</button>
       <button v-on:click="quickMove('compTech')">Tech</button>
       <button v-on:click="quickMove('compPtf')">Portfolio</button>
       <button v-on:click="quickMove('compHsty')">History</button>
@@ -60,43 +62,6 @@ export default {
       let scrollPoint = document.getElementById(menuName);
       window.scrollBy (0, scrollPoint.getBoundingClientRect().y);
     }
-    // scrollBind() {
-    //   let lastScrollTop = 0;
-    //   const delta = 5;
-    //   let fixBox = document.getElementById('compHeader');
-    //   let fixBoxHeight = fixBox.offsetHeight;
-    //   let didScroll;
-    //
-    //   window.onscroll = function(e) {
-    //     didScroll = true;
-    //   };
-    // //0.25초마다 스크롤 여부 체크하여 스크롤 중이면 hasScrolled() 호출
-    //   setInterval(function(){
-    //     if(didScroll){
-    //       this.hasScrolled();
-    //       didScroll = false;
-    //     }
-    //   }, 250);
-    // },
-    // hasScrolled(){
-    //   let nowScrollTop = window.scrollY;
-    //   if(Math.abs(lastScrollTop - nowScrollTop) <= delta){
-    //     return;
-    //   }
-    //   if(nowScrollTop > lastScrollTop && nowScrollTop > fixBoxHeight){
-    //     //Scroll down
-    //     this.navigationStatus = true;
-    //     console.log('scroll dowm');
-    //
-    //   }else{
-    //     if(nowScrollTop + window.innerHeight < document.body.offsetHeight){
-    //       //Scroll up
-    //       this.navigationStatus = false;
-    //       console.log('scroll up');
-    //     }
-    //   }
-    //   this.laslastScrollTop = nowScrollTop;
-    // }
   }
 }
 </script>
@@ -137,12 +102,13 @@ export default {
     color: #fff;
     font-size: 1rem;
     margin-left: 16px;
-    transition: all 0s;
+    transition: all 1s;
   }
 
   .nav-menu .menu button:hover {
-    font-weight: 600;
-    transition: all 0s;
+    /*font-weight: 600;*/
+    color: #c09aff;
+    transition: all 1s;
   }
 
   .btn_contact {
@@ -154,7 +120,8 @@ export default {
   }
 
   .btn_contact:hover {
-    background: #304ffe !important;
+    color: #fff !important;
+    background: #7346d9 !important;
   }
 
   /* only mobile DOM style */
@@ -199,10 +166,6 @@ export default {
 
   .m-menu {
     display: none;
-  }
-
-  .navhide {
-    top: -84px;
   }
 
   @media screen and (max-width: 768px) {

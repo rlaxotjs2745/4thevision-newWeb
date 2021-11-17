@@ -5,7 +5,7 @@
       <router-view/>
     </div>
     <footer-area class="footer-area"/>
-    <sns-area/>
+체<!--    <sns-area/>-->
   </div>
 </template>
 
@@ -26,9 +26,9 @@ export default {
 
 <style>
 #app {
+  min-width: 1280px;
   height: 100%;
   position: relative;
-  min-width: 1400px;
 }
 </style>
 
