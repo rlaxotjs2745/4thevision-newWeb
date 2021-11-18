@@ -5,7 +5,7 @@
       <router-view/>
     </div>
     <footer-area class="footer-area"/>
-체<!--    <sns-area/>-->
+<!--    <sns-area/>-->
   </div>
 </template>
 
