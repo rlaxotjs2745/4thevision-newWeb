@@ -47,7 +47,7 @@ name: "Contact",
 .contact-section {
   width: 30%;
   padding: 100px 10% 100px 10%;
-  background: transparent linear-gradient(109deg, #31BDFF 0%, #651FFF 100%) 0% 0% no-repeat padding-box;
+  background: #62727b;
 }
 
 .btn-contact {

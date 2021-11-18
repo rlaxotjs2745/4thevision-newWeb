@@ -1,14 +1,9 @@
 <template>
     <div>
-      <div class="spc-lg r-mobile"/>
-      <div class="highlight">
-        <div/>
-        <div class="highlight-text">4V Technology</div>
-      </div>
       <h2>몰입형 실감 기술 개발로<br>현실기반 XR 메타버스 구축</h2>
-      <span class="r-desktop">포더비전은 지난 10년간 메타버스 엔진 개발의 근간이 되는 기반 기술을 개발해 왔으며,<br>
+      <span class="r-desktop" style="opacity: 0.7;">포더비전은 지난 10년간 메타버스 엔진 개발의 근간이 되는 기반 기술을 개발해 왔으며,<br>
         스마트 팩토리, 엔터테인먼트, 콘텐츠 영역의 다양한 메타버스 구현 기술을 확보했습니다.</span>
-      <span class="r-mobile">포더비전은 지난 10년간<br>메타버스 엔진 개발의 근간이 되는<br>기반 기술을 개발해 왔으며,
+      <span class="r-mobile" style="opacity: 0.7;">포더비전은 지난 10년간<br>메타버스 엔진 개발의 근간이 되는<br>기반 기술을 개발해 왔으며,
         스마트 팩토리, 엔터테인먼트, 콘텐츠 영역의<br>다양한 메타버스 구현 기술을<br>확보했습니다.</span>
       <img class="tech-img-4v-engin" src="../assets/content-tech-01.svg">
       <div class="spc-lg"/>
@@ -17,7 +12,7 @@
 
       <div class="card-list">
         <div class="card">
-          <img src="../assets/ico-tech-01.svg"/>
+          <img src="../assets/ico-tech-01.png"/>
           <h5>시뮬레이터 연동<br>디지털 트윈</h5>
           <span>
             에머슨의 Ovation™ 시스템 및 시뮬레이터를 통해 각종 디지털 계기판 및 액추에이터와 연동하였으며,
@@ -25,7 +20,7 @@
           </span>
         </div>
         <div class="card">
-          <img src="../assets/ico-tech-02.svg"/>
+          <img src="../assets/ico-tech-02.png"/>
           <h5>국내 최대 규모<br>가상팩토리 구현</h5>
           <span>
             세아철강 디지털 트랜스포메이션 전략의
@@ -34,7 +29,7 @@
             시스템을 구현했습니다.
           </span>
         </div><div class="card">
-        <img src="../assets/ico-tech-03.svg"/>
+        <img src="../assets/ico-tech-03.png"/>
         <h5>핸드트레킹 인터페이스<br>현장감 극대화</h5>
         <span>
           가상 디지털트윈 구축 시 컨트롤러가 아닌
@@ -43,7 +38,7 @@
           </span>
       </div>
         <div class="card">
-          <img src="../assets/ico-tech-04.svg"/>
+          <img src="../assets/ico-tech-04.png"/>
           <h5>최상급 3D 그래픽<br>퀄리티 구현</h5>
           <span>
             최상의 3D 그래픽을 통해 우주 발전소를
@@ -58,36 +53,25 @@
       <div class="spc-sm"/>
       <h3>엔터테인먼트</h3>
       <div class="spc-sm"/>
-      <div class="slide-content r-desktop">
-        <div class="slide-images">
-          <img v-show="slideStatus.slideImage === 1" src="../assets/slide-image-4.png"/>
-          <img v-show="slideStatus.slideImage === 2" src="../assets/slide-image-2.png"/>
-          <img v-show="slideStatus.slideImage === 3" src="../assets/slide-image-1.png"/>
-          <img v-show="slideStatus.slideImage === 4" src="../assets/slide-image-3.png"/>
+      <div class="full-slide">
+        <div class="slide-image-area">
+          <img v-show="fullSlideStatus.page === 0" src="../assets/tech-high-quality-3dgraphic.png"/>
+          <img v-show="fullSlideStatus.page === 1" src="../assets/tech-360video.png"/>
+          <img v-show="fullSlideStatus.page === 2" src="../assets/tech-non-game-contents.png"/>
+          <img v-show="fullSlideStatus.page === 3" src="../assets/tech-meta-shopping.png"/>
         </div>
-        <div class="slide-button-list">
-          <button v-on:click="slideImages(1)" v-bind:class="{ focus: slideStatus.slideImage === 1 }">최상급 3D 그래픽 구현</button><br>
-          <button v-on:click="slideImages(2)" v-bind:class="{ focus: slideStatus.slideImage === 2 }">비게임 앱 콘텐츠 개발</button><br>
-          <button v-on:click="slideImages(3)" v-bind:class="{ focus: slideStatus.slideImage === 3 }">인터렉티브 360 영상</button><br>
-          <button v-on:click="slideImages(4)" v-bind:class="{ focus: slideStatus.slideImage === 4 }">360 영상과 3D 오브젝의 통합</button><br>
-        </div>
-      </div>
-      <div class="mobile-slide-content r-mobile">
-        <div class="slide-button-list">
-<!--          <div class="image-list">-->
-<!--            <img v-show="slideStatus.slideImage === 1" src="../assets/slide-image-m-1.png"/>-->
-<!--            <img v-show="slideStatus.slideImage === 2" src="../assets/slide-image-m-2.png"/>-->
-<!--            <img v-show="slideStatus.slideImage === 3" src="../assets/slide-image-m-4.png"/>-->
-<!--            <img v-show="slideStatus.slideImage === 4" src="../assets/slide-image-m-3.png"/>-->
-<!--          </div>-->
-          <img v-show="slideStatus.slideImage === 1" src="../assets/slide-image-m-1.png"/>
-          <button v-on:click="slideImages(1)" v-bind:class="{ focus: slideStatus.slideImage === 1 }">최상급 3D 그래픽 구현</button><br>
-          <img v-show="slideStatus.slideImage === 2" src="../assets/slide-image-m-2.png"/>
-          <button v-on:click="slideImages(2)" v-bind:class="{ focus: slideStatus.slideImage === 2 }">비게임 앱 콘텐츠 개발</button><br>
-          <img v-show="slideStatus.slideImage === 3" src="../assets/slide-image-m-4.png"/>
-          <button v-on:click="slideImages(3)" v-bind:class="{ focus: slideStatus.slideImage === 3 }">인터렉티브 360 영상</button><br>
-          <img v-show="slideStatus.slideImage === 4" src="../assets/slide-image-m-3.png"/>
-          <button v-on:click="slideImages(4)" v-bind:class="{ focus: slideStatus.slideImage === 4 }">360 영상과 3D 오브젝의 통합</button><br>
+        <div class="navigation-area">
+          <div>
+            <img :class="{'disable': fullSlideStatus.page === 0}" v-on:click="fullSlide(false)" src="../assets/slide-content/ico_left-navi.svg"/>
+            <span class="disable">{{ fullSlideStatus.pageContent[fullSlideStatus.page-1] }}</span>
+          </div>
+          <div>
+            <span class="slide-title">{{ fullSlideStatus.pageContent[fullSlideStatus.page] }}</span>
+          </div>
+          <div>
+            <span class="disable">{{ fullSlideStatus.pageContent[fullSlideStatus.page+1] }}</span>
+            <img :class="{'disable': fullSlideStatus.page === 3}" v-on:click="fullSlide(true)" src="../assets/slide-content/ico_right-navi.svg"/>
+          </div>
         </div>
       </div>
     </div>
@@ -98,18 +82,26 @@ export default {
   name: "OurTech.vue",
   data() {
     return {
-      slideStatus: {
-        slideImage : 1
+      fullSlideStatus: {
+        page: 0,
+        pageContent: ['최상급 3D 그래픽 구현','인터랙티브 360 영상','비 게임앱 콘텐츠 구현','360 영상과 3D 오브젝트 통합']
       }
     }
   },
   methods: {
-    slideImages(listNumber) {
-      let list = listNumber;
-      this.slideStatus.slideImage = list;
-    },
-    slideTimer() {
-
+    fullSlide(navigation) {
+      let Direction = navigation;
+      if (Direction === true) {
+        console.log(Direction);
+        if (this.fullSlideStatus.page < 3) {
+          this.fullSlideStatus.page = this.fullSlideStatus.page+1;
+          console.log(this.fullSlideStatus.page);
+        }
+      } else {
+        if (this.fullSlideStatus.page > 0) {
+          this.fullSlideStatus.page = this.fullSlideStatus.page-1;
+        }
+      }
     }
   }
 }
@@ -120,20 +112,38 @@ export default {
   position: relative;
 }
 
+.disable {
+  opacity: 0.5;
+}
+
 .card-list {
   display: flex;
   justify-content: space-between;
+  overflow: scroll;
 }
 
 .card {
+  display: inline-block;
   width: 20%;
+  min-width: 280px;
   padding: 42px;
   margin-right: 16px;
-  border-radius: 12px;
-  display: inline-block;
-  background: url("../assets/bg-tech-card.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.06);
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: all 2s;
+  cursor: default;
+}
+
+.card:hover {
+  background-color: #000;
+  transition: all 2s;
+}
+
+.card:hover img {
+  transform: translateY(-20px);
+  transition: all 2s;
 }
 
 .card-list h5 {
@@ -151,84 +161,57 @@ export default {
   top: -6%;
 }
 
-.slide-content {
+.full-slide {
   position: relative;
 }
 
-.slide-content .slide-images img {
-  width: 80%;
-}
-
-.r-desktop .slide-button-list {
-  position: absolute;
-  top: 10%;
-  right: 10%;
-  padding: 32px;
-  border-radius: 16px;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(6px);
-}
-
-.r-desktop .slide-button-list button {
-  text-align: left;
-  width: 352px;
-  height: 54px;
-  padding: 0 16px;
-  border: none;
-  font-size: 18px;
-  background: none;
-  color: #fff;
-  transition: all 2s;
-}
-
-
-.slide-button-list button:hover {
-  font-size: 18px;
-  background: rgba(0, 0, 0, 0.8);
-  transition: all 2s;
-}
-
-.mobile-slide-content img {
+.full-slide img {
   width: 100%;
-  height: 240px;
+  border-radius: 4px;
 }
 
-.mobile-slide-content .slide-button-list {
-  padding: 16px;
-  border-radius: 16px;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(6px);
+.slide-image-area {
+  max-height: 400px;
+  overflow: hidden;
 }
 
-.mobile-slide-content button {
-  text-align: left;
-  height: 54px;
-  padding: 0 16px;
-  border: none;
-  font-size: 18px;
-  background: none;
-  color: #fff;
-  transition: all 2s;
+.navigation-area {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 72px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));}
+
+.navigation-area>div {
+  display: flex;
+  align-items: center;
+  width: 33%;
 }
 
-.focus {
-  border: 2px solid #fff !important;
+.navigation-area>div:nth-child(1) {
+  justify-content: left;
+}
+
+.navigation-area>div:nth-child(2) {
+  justify-content: center;
+}
+
+.navigation-area>div:nth-child(3) {
+  justify-content: right;
+}
+
+.navigation-area img{
+  width: 32px;
+}
+
+.slide-title {
+  font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
-
-  .slide-images img{
-    width: 100%;
-  }
-
-  .slide-button-list {
-    position: relative;
-    background: rgba(0, 0, 0, 0.3);
-  }
-
-  .slide-button-list button {
-    width: 100%;
-  }
 
   .card-list {
     display: block;
@@ -243,7 +226,7 @@ export default {
 
   .tech-img-4v-engin {
     top: -60px;
-    right: 10%;
+    right: 32px;
     width: 220px;
   }
 
@@ -257,11 +240,6 @@ export default {
   .card-list span {
     opacity: 0.8;
     font-size: 14px;
-  }
-
-  .focus {
-    border: none !important;
-    background: #000;
   }
 
 }

@@ -1,27 +1,22 @@
 <template>
   <div class="home">
 
-    <!-- main content section -->
     <head-content id="compMain" class="main-content"/>
 
-    <!-- story content section -->
     <story-content id="compStry" class="story-content"/>
 
-   <our-service-content id="compService" class="our-services-content"/>
+    <our-service-content id="compService" class="our-services-content"/>
 
-    <!-- tech -->
+    <engine-content class="our-engine-content"/>
+
     <our-tech-content id="compTech" class="our-tech-content"/>
 
-    <!-- portfolio -->
     <portfolio-content id="compPtf" class="portfolio-content"/>
 
-    <!-- Company History -->
     <our-history id="compHsty" class="our-history-content"/>
 
-    <!-- Partner -->
     <our-partner id="compPtn" class="our-partners-content"/>
 
-    <!-- Contact -->
     <contact4v id="compCntct" class="contact4v-content"/>
 
   </div>
@@ -31,6 +26,7 @@
 import Main from "../components/Main"
 import Story from "../components/Story"
 import OurServices from "@/components/OurServices"
+import Engine from "@/components/V4Engine"
 import OurTech from "../components/OurTech"
 import Portfolio from "../components/Portfolio"
 import History from "../components/History"
@@ -43,6 +39,7 @@ export default {
     'head-content' : Main,
     'story-content' : Story,
     'our-service-content': OurServices,
+    'engine-content' : Engine,
     'our-tech-content' : OurTech,
     'portfolio-content' : Portfolio,
     'our-history' : History,
@@ -58,38 +55,48 @@ export default {
   display: block;
   position: relative;
   height: 800px;
-  padding: 85px 10% 100px 10%;
+  padding: 85px 10% 200px 10%;
   background: #37474f;
   color: #fff;
 }
 
 .story-content {
-  padding: 100px 10% 100px 10%;
+  padding: 200px 10% 200px 10%;
   color: #fff;
 }
 
 .our-services-content {
   text-align: center;
-  padding: 100px 10% 100px 10%;
+  padding: 200px 10% 200px 10%;
   background: #292929;
   color: #fff;
 }
 
+.our-engine-content {
+  text-align: center;
+  padding: 200px 10% 200px 10%;
+  background: #121212;
+  color: #fff;
+}
+
 .our-tech-content {
-  padding: 100px 10% 100px 10%;
-  background: #37474f;
+  padding: 200px 10% 200px 10%;
+  background: #212121;
   color: #fff;
 }
 
 .portfolio-content {
-  padding: 100px 10% 100px 10%;
-  background: #8e5dff;
+  padding: 200px 10% 200px 10%;
+  background: #424242;
   color: #fff;
 }
 
-.our-history-content,
+.our-history-content {
+
+}
+
 .our-partners-content {
-  padding: 100px 10% 100px 10%;
+  padding: 200px 10% 200px 10%;
   background: #fafafa;
 }
 
