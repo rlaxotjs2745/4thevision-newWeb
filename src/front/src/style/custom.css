@@ -40,6 +40,10 @@ span {
     font-weight: 300;
 }
 
+p, span, h1, h2, h3, h4, h5 {
+    cursor: default;
+}
+
 button {
     border: none;
     border-radius: 4px;
