@@ -7,7 +7,7 @@
           세상을 4V Engien이 만들어 갑니다.<br>
         </H1>
         <div class="spc-sm"/>
-        <button class="main-button">Contact us</button>
+        <button class="main-button">더 많은 이야기 나누기</button>
       </div>
 
     </div>
@@ -40,13 +40,14 @@ h1 span {
 .main-button {
   padding: 16px;
   font-size: 1.2rem;
-  letter-spacing: 1px;
+  font-weight: 500;
   background: #8e5dff;
   color: #fff;
 }
-background: #7346d9;
 
 .main-button:hover {
+  background: #7346d9;
+  transform: translateY(5px);
 }
 
 @media screen and (min-width: 1920px) {
