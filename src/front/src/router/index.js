@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Contact from '../views/Contact.vue'
+import PersonalInfoPolicy from '../views/PersonalInfoPolicy.vue'
 
 
 Vue.use(VueRouter)
@@ -13,14 +13,14 @@ const routes = [
     component: Home
   },
   {
-    path: '/contact',
-    name: 'Contact',
-    component: Contact
+    path: '/personal-policy',
+    name: 'PersonalInfoPolicy',
+    component: PersonalInfoPolicy
   }
 ]
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: 'hash',
   base: process.env.BASE_URL,
   routes
 })

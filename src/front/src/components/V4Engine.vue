@@ -1,10 +1,15 @@
 <template>
   <div>
      <h2>4VENGINE</h2>
-    <span style="opacity: 0.5; font-size: 16px;">
+    <span class="r-desktop" style="opacity: 0.5; font-size: 16px;">
         지금까지 교육, 디지털트윈, 엔터테인먼트, 커머스 XR 콘텐츠를 개발해오면서<br>
         축적한 기술을 누구나 쉽게 XR 콘텐츠를 개발할 수 있도록<br>
-        4V 엔진이라는 통합개발프레임워크로 제공합니다
+        4V 엔진이라는 통합개발프레임워크로 제공합니다.
+    </span>
+    <span class="r-mobile" style="opacity: 0.5; font-size: 16px;">
+        지금까지 교육, 디지털트윈, 엔터테인먼트,<br>커머스 XR 콘텐츠를 개발해오면서<br>
+        축적한 기술을 누구나 쉽게 XR 콘텐츠를<br>개발할 수 있도록
+        4V 엔진이라는<br>통합개발프레임워크로 제공합니다.
     </span>
     <div class="spc-md"/>
     <div class="card-list">
@@ -33,10 +38,12 @@
     <div class="spc-sm"/>
     <div class="slide-container">
       <div class="image-slide">
-        <img v-if="slideStatus === 'alice'"  src="../assets/engine-slide-image-1.png"/>
-        <img v-if="slideStatus === 'xredu'" src="../assets/engine-slide-image-2.png"/>
-        <img v-if="slideStatus === 'smartfy'" src="../assets/engine-slide-image-3.png"/>
-        <img v-if="slideStatus === 'wav'" src="../assets/engine-slide-image-4.png"/>
+        <div class="image-card-list">
+          <img v-if="slideStatus === 'alice'"  src="../assets/engine-slide-image-1.png"/>
+          <img v-if="slideStatus === 'xredu'" src="../assets/engine-slide-image-2.png"/>
+          <img v-if="slideStatus === 'smartfy'" src="../assets/engine-slide-image-3.png"/>
+          <img v-if="slideStatus === 'wav'" src="../assets/engine-slide-image-4.png"/>
+        </div>
         <div class="navi-btn-list">
           <button v-on:click="slideStatus = 'smartfy'" class="navi-btn" :class="{'focus-navibtn': slideStatus === 'smartfy'}">스마트 팩토리</button>
           <button v-on:click="slideStatus = 'xredu'" class="navi-btn" :class="{'focus-navibtn': slideStatus === 'xredu'}">XR 에듀케이션</button>
@@ -124,6 +131,11 @@ export default {
   color: #fff;
 }
 
+.image-card-list img {
+  width: 100%;
+  height: 100%;
+}
+
 .image-slide img {
   display: inline-flex;
 }
@@ -143,7 +155,50 @@ export default {
 }
 
 @media screen and (max-width: 800px) {
+  .card-ui {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
 
+  .image-slide {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    border-radius: 4px;
+    background-color: rgba(192, 154, 255, 0.12);
+  }
+
+  .image-slide img {
+    width: 100%;
+  }
+
+  .image-slide .navi-btn-list {
+    width: auto !important;
+    height: auto !important;
+    padding: 12px;
+    margin-left: 0;
+    border-radius: 4px;
+    background-color: rgba(192, 154, 255, 0.12);
+  }
+
+  .navi-btn {
+    text-align: center;
+    width: 100%;
+  }
+
+  .image-card-list {
+    text-align: center;
+    width: 100%;
+    height: 230px;
+    margin-bottom: 16px;
+    overflow: hidden;
+  }
+
+  .image-card-list img {
+    height: 100%;
+    width: auto;
+  }
 
 }
 

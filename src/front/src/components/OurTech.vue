@@ -146,11 +146,11 @@ export default {
   transition: all 2s;
 }
 
-.card-list h5 {
+.card h5 {
   font-size: 26px;
 }
 
-.card-list span {
+.card span {
   opacity: 0.7;
   font-size: 14px;
 }
@@ -211,35 +211,48 @@ export default {
   font-weight: bold;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
+
+  .tech-img-4v-engin {
+    width: 70%;
+    position: absolute;
+    right: 10%;
+    top: -64px;
+  }
 
   .card-list {
+    width: 100%;
     display: block;
   }
 
   .card {
     width: auto;
-    padding: 1.2rem;
-    margin: 0;
+    min-width: auto;
+    padding: 1.5rem;
+    margin-right: 0;
     margin-bottom: 1rem;
   }
 
-  .tech-img-4v-engin {
-    top: -60px;
-    right: 32px;
-    width: 220px;
+  .card:hover img {
+    transform: none !important;
+    transition: all 2s;
   }
 
-  .card-list h5 {
-    font-size: 20px;
-    color: #c09aff;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  .card h5 {
+    font-size: 20px !important;
   }
 
-  .card-list span {
-    opacity: 0.8;
-    font-size: 14px;
+  .navigation-area>div:nth-child(2) {
+
+  }
+
+  .navigation-area span {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .disable {
+    display: none;
   }
 
 }

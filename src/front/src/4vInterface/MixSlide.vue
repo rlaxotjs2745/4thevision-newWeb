@@ -187,6 +187,9 @@ h3 {
 
 .image-area {
   position: relative;
+  border: 1px solid #00000085;
+  border-radius: 4px;
+  background: #0000002e;
 }
 
 .image-area>img {
@@ -210,4 +213,17 @@ h3 {
 .navi-right {
   margin-right: 16px;
 }
+
+@media screen and (max-width: 800px) {
+.slide-card-list {
+  display: block;
+}
+  .slide-area {
+    width: auto;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+}
+
 </style>

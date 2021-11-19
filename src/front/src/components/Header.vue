@@ -3,6 +3,7 @@
   <!-- desktop -->
   <div class="nav-menu-layout d-menu">
     <div>
+<!--      <img src="../assets/header-logo.svg" v-on:click="$router.replace('/')">-->
       <img src="../assets/header-logo.svg" v-on:click="quickMove('compMain')">
     </div>
     <div class="menu">
@@ -45,6 +46,8 @@
 
 <script>
 
+import router from "@/router";
+
 export default {
   data () {
     return {
@@ -56,7 +59,13 @@ export default {
     }
   },
   methods: {
+    moveMain() {
+      if (location.hash !== '#/') {
+        router.replace('/');
+      }
+    },
     quickMove(sectionName) {
+      // this.moveMain();
       let menuName = sectionName;
       // section's y position in Home.vue
       let scrollPoint = document.getElementById(menuName);

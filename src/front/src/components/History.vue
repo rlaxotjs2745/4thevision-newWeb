@@ -66,7 +66,17 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
+  .section-title {
+    display: block;
+  }
 
+  .section-title>div {
+    width: 100%;
+  }
+
+  .section-title>div img {
+    width: 100%;
+  }
 }
 
 </style>
