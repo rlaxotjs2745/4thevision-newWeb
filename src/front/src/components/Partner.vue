@@ -2,23 +2,15 @@
 <div>
   <div class="t-center">
     <h2 class="our-partners-title r-desktop">포더비전은 미래 기술을 선도하는 기업들과 함께합니다.</h2>
-    <h2 class="our-partners-title r-mobile">포더비전은 미래 기술을 선도하는<br>기업들과 함께합니다.</h2>
     <div class="spc-lg"/>
-    <div class="r-desktop">
-      <img class="all-partners-logo" src="../assets/partners/all-partners.png"/>
-    </div>
-    <div class="r-mobile">
-      <div class="slide-logos">
-        <img src="../assets/partners/mobile-partners.png">
-      </div>
-    </div>
+    <img src="../assets/partners/our-partners.png" width="70%"/>
   </div>
 </div>
 </template>
 
 <script>
 export default {
-  name: "Partner",
+  name: "Partner.vue",
   data () {
     return {
 
