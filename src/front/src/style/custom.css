@@ -140,6 +140,10 @@ img:hover {
         font-weight: 600;
     }
 
+    span {
+        font-size: 1rem;
+    }
+
     .m-text-center {
         text-align: center;
     }

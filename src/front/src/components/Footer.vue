@@ -2,7 +2,7 @@
 <div class="footer-info">
   <div class="flex-layout justfy-sb">
     <div>
-      <img src="../assets/footer-4v-logo.png"/>
+      <img class="footer-logo" src="../assets/footer-4v-logo.png"/>
       <div class="spc-md"/>
       <div class="company-info">
         <div><span class="title">사업자명</span> <span>주식회사 포더비전</span></div>
@@ -14,8 +14,11 @@
         <div><span class="title">이메일</span> <span>ask@4thevision.com</span></div>
         <div><span class="title">팩스번호</span> <span>031-624-8069</span></div>
       </div>
-      <div class="company-info">
-        <div><span class="title">주소</span> <span>경기도 성남시 수정구 창업로42번길 경기기업지원허브 332호</span></div>
+      <div class="company-info r-desktop">
+        <div class="r-desktop"><span class="title">주소</span> <span>경기도 성남시 수정구 창업로42번길 경기기업지원허브 332호</span></div>
+      </div>
+      <div class="company-info r-mobile">
+        <div class="r-desktop"><span class="title">주소</span><span>경기도 성남시 수정구 창업로42번길<br>경기기업지원허브 332호</span></div>
       </div>
       <div class="spc-md"/>
       <span class="copyright">Copyright 2021. 4thevision inc. all rights reserved.</span>
@@ -54,6 +57,7 @@ export default {
       window.scrollTo(0,0);
     },
     closeModal(modalName) {
+      console.log(modalName);
       const modal = modalName;
       switch (modal) {
         case 'personalPolicy':
@@ -69,6 +73,10 @@ export default {
   padding: 72px 10% 72px 10%;
   background: #58646a;
   color: #fff;
+}
+
+.footer-logo {
+  width: 180px;
 }
 
 .company-info .title {
@@ -112,6 +120,14 @@ export default {
 @media screen and (max-width: 800px) {
   .footer-info>div {
     display: block;
+  }
+
+  .company-info span{
+    color: #fff;
+    margin-left: 10px;
+    opacity: 0.7;
+    font-size: 12px;
+    line-height: 28px;
   }
 
   .footer-info>div>div:nth-child(2) {

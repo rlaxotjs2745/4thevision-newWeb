@@ -54,11 +54,17 @@
       <h3>엔터테인먼트</h3>
       <div class="spc-sm"/>
       <div class="full-slide">
-        <div class="slide-image-area">
-          <img v-show="fullSlideStatus.page === 0" src="../assets/tech-high-quality-3dgraphic.png"/>
-          <img v-show="fullSlideStatus.page === 1" src="../assets/tech-360video.png"/>
-          <img v-show="fullSlideStatus.page === 2" src="../assets/tech-non-game-contents.png"/>
-          <img v-show="fullSlideStatus.page === 3" src="../assets/tech-meta-shopping.png"/>
+        <div class="slide-image-area r-desktop">
+          <img v-if="fullSlideStatus.page === 0" src="../assets/tech-high-quality-3dgraphic.png"/>
+          <img v-if="fullSlideStatus.page === 1" src="../assets/tech-360video.png"/>
+          <img v-if="fullSlideStatus.page === 2" src="../assets/tech-non-game-contents.png"/>
+          <img v-if="fullSlideStatus.page === 3" src="../assets/tech-meta-shopping.png"/>
+        </div>
+        <div class="slide-image-area r-mobile">
+          <img v-if="fullSlideStatus.page === 0" src="../assets/m-tech-high-quality-3dgraphic.png"/>
+          <img v-if="fullSlideStatus.page === 1" src="../assets/m-tech-360video.png"/>
+          <img v-if="fullSlideStatus.page === 2" src="../assets/m-tech-non-game-contents.png"/>
+          <img v-if="fullSlideStatus.page === 3" src="../assets/m-tech-meta-shopping.png"/>
         </div>
         <div class="navigation-area">
           <div>
@@ -201,6 +207,7 @@ export default {
 
 .navigation-area>div:nth-child(3) {
   justify-content: right;
+  justify-content: flex-end;
 }
 
 .navigation-area img{
@@ -253,6 +260,16 @@ export default {
 
   .disable {
     display: none;
+  }
+
+  .slide-image-area {
+    text-align: center;
+    height: 300px;
+  }
+
+  .slide-image-area img {
+    width: auto;
+    height: 100%;
   }
 
 }

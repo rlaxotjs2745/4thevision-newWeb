@@ -54,8 +54,8 @@ export default {
 .main-content {
   display: block;
   position: relative;
-  height: 800px;
-  padding: 85px 10% 200px 10%;
+  height: 720px;
+  padding: 72px 10% 200px 10%;
   background: #37474f;
   color: #fff;
 }

@@ -38,14 +38,14 @@
 export default {
   data () {
     return {
-      policyDetail: false
+      policyDetail: true
     }
   },
   props: ['close-this-modal'],
   name: "PersonalPolicy.vue",
   methods: {
     closePopup: function () {
-      this.$emit('closedModal', '매개변수');
+      this.$emit('closedModal', '');
     }
   }
 }
@@ -59,16 +59,19 @@ export default {
   top: 0;
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(6px);
   color: #37474f;
-  pointer-events: none;
 }
 
 .fragment>div {
   display: block;
   background: #fff;
   border-radius: 4px;
+  margin: 10%;
 }
 
 .fragment-head,
@@ -83,12 +86,12 @@ export default {
   color: #37474f;
 }
 
-.fragment-body {
-  font-size: 1rem;
+.fragment-body,
+.policy div {
+  font-size: 12px !important;
 }
 
 .policy div {
-  font-size: 1rem;
   padding-left: 1rem;
 }
 
@@ -101,11 +104,8 @@ export default {
 
 /*height: 100%;*/
 @media screen and (max-width: 800px) {
-  .fragment {
-    display: flex;
-    width: auto;
-    height: 100%;
-    padding: 16px;
+  .fragment>div {
+    width: 96%;
   }
 }
 
