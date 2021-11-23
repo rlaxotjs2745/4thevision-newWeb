@@ -5,7 +5,7 @@
         <h2>1세대 가상현실 기업에서,<br>1세대 메타버스 엔진 기업으로의 도약</h2>
         <span>
           포더비전은 다양한 몰입형 미디어 분야의 기술을 선도하는<br>
-          1세대 Immersive media Tech 기업에서<br>
+          1세대 Immersive Media Tech 기업에서<br>
           메타버스 엔진 기업으로의 도약하고 있습니다.<br>
         </span>
       </div>
@@ -14,7 +14,7 @@
         <h2>1세대 가상현실 기업에서,<br>1세대 메타버스 엔진<br>기업으로의 도약</h2>
         <span>
           포더비전은 다양한 몰입형 미디어 분야의 기술을 선도하는
-          1세대 Immersive media Tech 기업에서
+          1세대 Immersive Media Tech 기업에서
           메타버스 엔진 기업으로의 도약하고 있습니다.
         </span>
       </div>

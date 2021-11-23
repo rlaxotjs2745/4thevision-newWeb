@@ -10,15 +10,15 @@
         <div><span class="title">대표</span> <span>이아백</span></div>
       </div>
       <div class="company-info">
-        <div><span class="title">문의전화</span> <span>031-624-0869</span></div>
-        <div><span class="title">이메일</span> <span>ask@4thevision.com</span></div>
+        <div><span class="title">문의전화</span> <span>031-8017-0369</span></div>
+        <div><span class="title">이메일</span> <span>info@4thevision.com</span></div>
         <div><span class="title">팩스번호</span> <span>031-624-8069</span></div>
       </div>
       <div class="company-info r-desktop">
-        <div class="r-desktop"><span class="title">주소</span> <span>경기도 성남시 수정구 창업로42번길 경기기업지원허브 332호</span></div>
+        <div class="r-desktop"><span class="title">주소</span> <span>소경기도 성남시 수정구 시흥동 창업로 42 경기기업성장센터 322호</span></div>
       </div>
       <div class="company-info r-mobile">
-        <div class="r-desktop"><span class="title">주소</span><span>경기도 성남시 수정구 창업로42번길<br>경기기업지원허브 332호</span></div>
+        <div class="r-desktop"><span class="title">주소</span><span>경기도 성남시 수정구 시흥동 창업로 42<br>경기기업성장센터 322호</span></div>
       </div>
       <div class="spc-md"/>
       <span class="copyright">Copyright 2021. 4thevision inc. all rights reserved.</span>
@@ -58,7 +58,6 @@ export default {
       window.scrollTo(0,0);
     },
     closeModal(modalName) {
-      console.log(modalName);
       const modal = modalName;
       switch (modal) {
         case 'personalPolicy':

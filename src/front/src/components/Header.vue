@@ -8,7 +8,7 @@
     </div>
     <div class="menu">
       <button v-on:click="quickMove('compMain')">Main</button>
-      <button v-on:click="quickMove('compAbt4v')">About</button>
+<!--      <button v-on:click="quickMove('compAbt4v')">About</button>-->
       <button v-on:click="quickMove('compService')">Services</button>
       <button v-on:click="quickMove('compTech')">Tech</button>
       <button v-on:click="quickMove('compPtf')">Portfolio</button>
@@ -33,7 +33,7 @@
     <div class="m-quick-toggle" v-show="menuToggle">
       <p class="quick-menu-title">QUICK MENU</p>
       <button v-on:click="quickMove('compMain')">Main</button>
-      <button v-on:click="quickMove('compAbt4v')">About</button>
+<!--      <button v-on:click="quickMove('compAbt4v')">About</button>-->
       <button v-on:click="quickMove('compService')">Services</button>
       <button v-on:click="quickMove('compTech')">Tech</button>
       <button v-on:click="quickMove('compPtf')">Portfolio</button>

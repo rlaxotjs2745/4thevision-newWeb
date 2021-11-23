@@ -23,7 +23,7 @@
           <img src="../assets/ico-tech-02.png"/>
           <h5>국내 최대 규모<br>가상팩토리 구현</h5>
           <span>
-            세아철강 디지털 트랜스포메이션 전략의
+            'S'철강 디지털 트랜스포메이션 전략의
             일환으로 철강공장 전체를 디지털로 구현하고,
             철강 제작 공정의 가시화와 모니터링이 가능한
             시스템을 구현했습니다.
@@ -55,16 +55,16 @@
       <div class="spc-sm"/>
       <div class="full-slide">
         <div class="slide-image-area r-desktop">
-          <img v-if="fullSlideStatus.page === 0" src="../assets/tech-high-quality-3dgraphic.png"/>
-          <img v-if="fullSlideStatus.page === 1" src="../assets/tech-360video.png"/>
-          <img v-if="fullSlideStatus.page === 2" src="../assets/tech-non-game-contents.png"/>
-          <img v-if="fullSlideStatus.page === 3" src="../assets/tech-meta-shopping.png"/>
+          <img v-show="fullSlideStatus.page === 0" src="../assets/tech-high-quality-3dgraphic.png"/>
+          <img v-show="fullSlideStatus.page === 1" src="../assets/tech-360video.png"/>
+          <img v-show="fullSlideStatus.page === 2" src="../assets/tech-non-game-contents.png"/>
+          <img v-show="fullSlideStatus.page === 3" src="../assets/tech-meta-shopping.png"/>
         </div>
         <div class="slide-image-area r-mobile">
-          <img v-if="fullSlideStatus.page === 0" src="../assets/m-tech-high-quality-3dgraphic.png"/>
-          <img v-if="fullSlideStatus.page === 1" src="../assets/m-tech-360video.png"/>
-          <img v-if="fullSlideStatus.page === 2" src="../assets/m-tech-non-game-contents.png"/>
-          <img v-if="fullSlideStatus.page === 3" src="../assets/m-tech-meta-shopping.png"/>
+          <img v-show="fullSlideStatus.page === 0" src="../assets/m-tech-high-quality-3dgraphic.png"/>
+          <img v-show="fullSlideStatus.page === 1" src="../assets/m-tech-360video.png"/>
+          <img v-show="fullSlideStatus.page === 2" src="../assets/m-tech-non-game-contents.png"/>
+          <img v-show="fullSlideStatus.page === 3" src="../assets/m-tech-meta-shopping.png"/>
         </div>
         <div class="navigation-area">
           <div>
@@ -98,10 +98,8 @@ export default {
     fullSlide(navigation) {
       let Direction = navigation;
       if (Direction === true) {
-        console.log(Direction);
         if (this.fullSlideStatus.page < 3) {
           this.fullSlideStatus.page = this.fullSlideStatus.page+1;
-          console.log(this.fullSlideStatus.page);
         }
       } else {
         if (this.fullSlideStatus.page > 0) {

@@ -1,6 +1,6 @@
 <template>
   <div>
-     <h2>4VENGINE</h2>
+     <h2>4V ENGINE</h2>
     <span class="r-desktop" style="opacity: 0.5; font-size: 16px;">
         지금까지 교육, 디지털트윈, 엔터테인먼트, 커머스 XR 콘텐츠를 개발해오면서<br>
         축적한 기술을 누구나 쉽게 XR 콘텐츠를 개발할 수 있도록<br>
@@ -9,7 +9,7 @@
     <span class="r-mobile" style="opacity: 0.5; font-size: 16px;">
         지금까지 교육, 디지털트윈, 엔터테인먼트,<br>커머스 XR 콘텐츠를 개발해오면서<br>
         축적한 기술을 누구나 쉽게 XR 콘텐츠를<br>개발할 수 있도록
-        4V 엔진이라는<br>통합개발프레임워크로 제공합니다.
+        4V 엔진이라는<br>통합 개발 프레임워크로 제공합니다.
     </span>
     <div class="spc-md"/>
     <div class="card-list">
@@ -39,16 +39,16 @@
     <div class="slide-container">
       <div class="image-slide">
         <div class="image-card-list r-desktop">
-          <img v-if="slideStatus === 'alice'"  src="../assets/engine-slide-image-1.png"/>
-          <img v-if="slideStatus === 'xredu'" src="../assets/engine-slide-image-2.png"/>
-          <img v-if="slideStatus === 'smartfy'" src="../assets/engine-slide-image-3.png"/>
-          <img v-if="slideStatus === 'wav'" src="../assets/engine-slide-image-4.png"/>
+          <img v-show="slideStatus === 'alice'"  src="../assets/engine-slide-image-1.png"/>
+          <img v-show="slideStatus === 'xredu'" src="../assets/engine-slide-image-2.png"/>
+          <img v-show="slideStatus === 'smartfy'" src="../assets/engine-slide-image-3.png"/>
+          <img v-show="slideStatus === 'wav'" src="../assets/engine-slide-image-4.png"/>
         </div>
         <div class="image-card-list r-mobile">
-          <img v-if="slideStatus === 'alice'"  src="../assets/engine-slide-m-image-1.png"/>
-          <img v-if="slideStatus === 'xredu'" src="../assets/engine-slide-m-image-2.png"/>
-          <img v-if="slideStatus === 'smartfy'" src="../assets/engine-slide-m-image-3.png"/>
-          <img v-if="slideStatus === 'wav'" src="../assets/engine-slide-m-image-4.png"/>
+          <img v-show="slideStatus === 'alice'"  src="../assets/engine-slide-m-image-1.png"/>
+          <img v-show="slideStatus === 'xredu'" src="../assets/engine-slide-m-image-2.png"/>
+          <img v-show="slideStatus === 'smartfy'" src="../assets/engine-slide-m-image-3.png"/>
+          <img v-show="slideStatus === 'wav'" src="../assets/engine-slide-m-image-4.png"/>
         </div>
         <div class="navi-btn-list">
           <button v-on:click="slideStatus = 'smartfy'" class="navi-btn" :class="{'focus-navibtn': slideStatus === 'smartfy'}">스마트 팩토리</button>

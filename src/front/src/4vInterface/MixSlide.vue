@@ -4,10 +4,10 @@
     <div class="slide-area">
       <h3>Metaverse</h3>
       <div class="image-area">
-        <img v-if="slideStatus.metaverse.page === 0" src="../assets/slide-content/slide-1.png"/>
-        <img v-if="slideStatus.metaverse.page === 1" src="../assets/slide-content/slide-2.png"/>
-        <img v-if="slideStatus.metaverse.page === 2" src="../assets/slide-content/slide-3.png"/>
-        <img v-if="slideStatus.metaverse.page === 3" src="../assets/slide-content/slide-4.png"/>
+        <img v-show="slideStatus.metaverse.page === 0" src="../assets/slide-content/slide-1.png"/>
+        <img v-show="slideStatus.metaverse.page === 1" src="../assets/slide-content/slide-2.png"/>
+        <img v-show="slideStatus.metaverse.page === 2" src="../assets/slide-content/slide-3.png"/>
+        <img v-show="slideStatus.metaverse.page === 3" src="../assets/slide-content/slide-4.png"/>
         <div class="slide-info-area">
           <img class="navi-left" :class="{'disable-navi': slideStatus.metaverse.page == 0}"
                v-on:click="mixSlide('Metaverse', 'left')"
@@ -27,18 +27,17 @@
     <div class="slide-area">
       <h3>Disital Twin & Education</h3>
       <div class="image-area">
-        <img v-if="slideStatus.disitaltwin.page === 0" src="../assets/slide-content/slide-5.png"/>
-        <img v-if="slideStatus.disitaltwin.page === 1" src="../assets/slide-content/slide-6.png"/>
-        <img v-if="slideStatus.disitaltwin.page === 2" src="../assets/slide-content/slide-7.png"/>
-        <img v-if="slideStatus.disitaltwin.page === 3" src="../assets/slide-content/slide-8.png"/>
+        <img v-show="slideStatus.disitaltwin.page === 0" src="../assets/slide-content/slide-5.png"/>
+        <img v-show="slideStatus.disitaltwin.page === 1" src="../assets/slide-content/slide-6.png"/>
+        <img v-show="slideStatus.disitaltwin.page === 2" src="../assets/slide-content/slide-7.png"/>
+        <img v-show="slideStatus.disitaltwin.page === 3" src="../assets/slide-content/slide-8.png"/>
         <div class="slide-info-area">
           <img class="navi-left" :class="{'disable-navi': slideStatus.disitaltwin.page == 0}"
                v-on:click="mixSlide('DisitalTwin', 'left')"
                src="../assets/slide-content/ico_left-navi.svg"
           />
           <div class="content-area">
-            <span>{{ slideStatus.disitaltwin.caption[slideStatus.disitaltwin.page] }}</span>
-            <p>{{ slideStatus.disitaltwin.title[slideStatus.disitaltwin.page] }}</p>
+            <p class="disitaltwin-title">{{ slideStatus.disitaltwin.title[slideStatus.disitaltwin.page] }}</p>
           </div>
           <img class="navi-right" :class="{'disable-navi': slideStatus.disitaltwin.page == 3}"
                v-on:click="mixSlide('DisitalTwin', 'right')"
@@ -50,8 +49,8 @@
     <div class="slide-area">
       <h3>Development</h3>
       <div class="image-area">
-        <img v-if="slideStatus.development.page === 0" src="../assets/slide-content/slide-10.png"/>
-        <img v-if="slideStatus.development.page === 1" src="../assets/slide-content/slide-11.png"/>
+        <img v-show="slideStatus.development.page === 0" src="../assets/slide-content/slide-10.png"/>
+        <img v-show="slideStatus.development.page === 1" src="../assets/slide-content/slide-11.png"/>
         <div class="slide-info-area">
           <img class="navi-left" :class="{'disable-navi': slideStatus.development.page == 0}"
                v-on:click="mixSlide('Development', 'left')"
@@ -211,6 +210,11 @@ h3 {
 .navi-right {
   margin-right: 16px;
 }
+
+.disitaltwin-title {
+  line-height: 42px;
+}
+
 
 @media screen and (max-width: 800px) {
 .slide-card-list {

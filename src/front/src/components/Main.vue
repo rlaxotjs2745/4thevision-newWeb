@@ -4,12 +4,12 @@
         <h1 class="r-desktop">
           <span>또 다른 세계, 또 다른 나와 만나는 메타버스,</span><br>
           현실과 가상의 세계가 상호작용하는<br>
-          세상을 4V Engien이 만들어 갑니다.<br>
+          세상을 4V Engine이 만들어 갑니다.<br>
         </h1>
         <h1 class="r-mobile">
           <span>또 다른 세계, 또 다른 나와 만나는 메타버스,</span><br>
           현실과 가상의 세계가<br>상호작용하는 세상을<br>
-          4V Engien이 만들어 갑니다.<br>
+          4V Engine이 만들어 갑니다.<br>
         </h1>
         <div class="spc-sm"/>
         <button class="main-button" v-on:click="quickMove('compCntct')">더 많은 이야기 나누기</button>
@@ -18,9 +18,8 @@
       <!-- background video -->
       <div class="video-layout">
         <video class="background-video" src="../assets/video-file/4thevision-brand-web.mp4" autoplay loop muted/>
-<!--        <iframe class="background-video" width="100%" height="100%" src="https://www.youtube.com/embed/403MNBVmC9w?autoplay=1&mute=1&controls=0&loop=0" title="" frameborder="0" allow="autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12676.217052382364!2d127.095049!3d37.4121923!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc2bf565eb242c869!2zKOyjvCntj6zrjZTruYTsoIQ!5e0!3m2!1sko!2skr!4v1637656449591!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
-
     </div>
 </template>
 
