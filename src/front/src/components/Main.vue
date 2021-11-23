@@ -12,8 +12,14 @@
           4V Engien이 만들어 갑니다.<br>
         </h1>
         <div class="spc-sm"/>
-        <button class="main-button">더 많은 이야기 나누기</button>
+        <button class="main-button" v-on:click="quickMove('compCntct')">더 많은 이야기 나누기</button>
       </div>
+
+      <!-- background video -->
+      <div class="video-layout">
+        <iframe class="background-video" width="100%" height="100%" src="https://www.youtube.com/embed/403MNBVmC9w?autoplay=1&mute=1&controls=0&loop=0" title="" frameborder="0" allow="autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
     </div>
 </template>
 
@@ -55,8 +61,25 @@ h1 span {
   transform: translateY(5px);
 }
 
-@media screen and (min-width: 1920px) {
+.video-layout {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+}
 
+@media screen and (min-width: 1920px) {
+  .video-layout {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .background-video {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {

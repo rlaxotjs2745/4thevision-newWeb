@@ -33,6 +33,7 @@
                       :close-this-modal="personalPolicyOpen"
                       @closedModal="closeModal('personalPolicy')"
       />
+      <button class="btn-pages" onclick="location.href = 'https://blog.naver.com/4thevision'">포더비전 기술 블로그</button>
     </div>
   </div>
 

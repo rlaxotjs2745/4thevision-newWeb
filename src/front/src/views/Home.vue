@@ -56,7 +56,7 @@ export default {
   position: relative;
   height: 720px;
   padding: 72px 10% 200px 10%;
-  background: #37474f;
+  background: #00000096;
   color: #fff;
 }
 
