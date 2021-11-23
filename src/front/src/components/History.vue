@@ -5,8 +5,8 @@
           <h2>포더비전이 걸어온 길</h2>
           <span style="opacity: 0.7">2015년부터 한 걸음씩 멈추지 않고 걸어왔습니다.</span>
           <div class="spc-lg"/>
-          <button class="btn-document">[IR] 최신 IR자료를 보고싶어요</button><br>
-          <button class="btn-document">[채용] 포더비전 입사 지원</button>
+          <button class="btn-document" v-on:mouseleave="getIRDocs = '[IR] IR 자료가 궁금해요!'" v-on:mouseover="getIRDocs = 'Contact us에서 요청해주세요.'">{{ getIRDocs }}</button><br>
+          <button class="btn-document" onclick="location.href = 'https://www.notion.so/4thevision/93c67d52a9534e00801686095cbf73c5'">[채용] 포더비전 입사 지원</button>
         </div>
         <div>
           <img src="../assets/3d-slogan.png">
@@ -20,7 +20,12 @@
 
 <script>
 export default {
-  name: "History.vue"
+  name: "History.vue",
+  data () {
+    return {
+      getIRDocs: '[IR] IR 자료가 궁금해요!'
+    }
+  }
 }
 
 </script>

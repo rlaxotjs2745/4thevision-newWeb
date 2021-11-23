@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="37" viewBox="0 0 27 37">
-  <defs>
-    <linearGradient id="linear-gradient" x2="1" y2="1" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#31bdff"/>
-      <stop offset="1" stop-color="#b11fff"/>
-    </linearGradient>
-  </defs>
-  <rect id="ract_99" data-name="ract 99" width="27" height="37" fill="url(#linear-gradient)"/>
-</svg>

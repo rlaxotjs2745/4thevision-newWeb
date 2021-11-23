@@ -17,20 +17,18 @@
           <div class="portfolio-item"><img src="../assets/portfolio-images/portfolio-04.png"/><p>“Beat the Bears”<br>스트레오타입<br>한국 전통음악 체험 콘텐츠</p></div>
 
 
-          <div class="portfolio-item"><img src="../assets/portfolio-images/portfolio-05.png"/><p>KICT VT 카메라<br>장비 R&D</p></div>
-          <div class="portfolio-item"><img src="../assets/portfolio-images/portfolio-06.png"/><p>Island of Dinosaur<br>VR 콘텐츠 개발</p></div>
+<!--          <div class="portfolio-item"><img src="../assets/portfolio-images/portfolio-05.png"/><p>KICT VT 카메라<br>장비 R&D</p></div>-->
+<!--          <div class="portfolio-item"><img src="../assets/portfolio-images/portfolio-06.png"/><p>Island of Dinosaur<br>VR 콘텐츠 개발</p></div>-->
           <div class="portfolio-item"><img src="../assets/portfolio-images/portfolio-07.png"/><p>VR 드라마 ‘Run! 구구단’</p></div>
           <div class="portfolio-item"><img src="../assets/portfolio-images/portfolio-08.png"/><p>VR 가상 노래방 시뮬레이션<br>콘텐츠 및 서비스 개발</p></div>
-
-          <div class="portfolio-item"><img src="../assets/portfolio-images/portfolio-09.png"/><p>UNICEF 디지털 체험존 및<br>디지털 콘텐츠 6종 개발</p></div>
           <div class="portfolio-item"><img src="../assets/portfolio-images/portfolio-010.png"/><p>SBS<br>사대륙 피겨 선수 대회<br>VR 생중계</p></div>
           <div class="portfolio-item"><img src="../assets/portfolio-images/portfolio-011.png"/><p>AR 공룡 테마파크<br>“DINO DISCOVERY”</p></div>
+<!--          <div class="portfolio-item"><img src="../assets/portfolio-images/portfolio-09.png"/><p>UNICEF 디지털 체험존 및<br>디지털 콘텐츠 6종 개발</p></div>-->
           <div class="portfolio-item"><img src="../assets/portfolio-images/portfolio-012.png"/><p>SBS<br>연예대상 2016<br>VR 생중계</p></div>
-
           <div class="portfolio-item"><img src="../assets/portfolio-images/portfolio-013.png"/><p>의료 VR<br>VR 수술 콘텐츠 개발</p></div>
           <div class="portfolio-item"><img src="../assets/portfolio-images/portfolio-014.png"/><p>람보르기니 체험 VR</p></div>
           <div class="portfolio-item"><img src="../assets/portfolio-images/portfolio-015.png"/><p>세계최초 KT 야구 VR 생중계</p></div>
-          <div class="portfolio-item"><img src="../assets/portfolio-images/portfolio-016.png"/><p>삼성 갤럭시 S7 TV CF</p></div>
+<!--          <div class="portfolio-item"><img src="../assets/portfolio-images/portfolio-016.png"/><p>삼성 갤럭시 S7 TV CF</p></div>-->
         </div>
       </div>
 

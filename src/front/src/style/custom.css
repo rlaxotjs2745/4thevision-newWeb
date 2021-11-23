@@ -9,7 +9,7 @@ root, body, #app {
 }
 
 button:focus {
-    outline: 1xp solid #00B195;
+    outline: 1px solid #00B195;
 }
 
 * {

@@ -23,8 +23,8 @@
       <div class="card-ui">
         <div>
           <img src="../assets/ico-4v-engine-sdk.png"/>
-          <p>4V 메타버스 Maker</p>
-          <span>XR 콘텐츠를 가장 쉽게<br>개발하는 도구</span>
+          <p>4V 메타버스 SDK</p>
+          <span>개발자들이 가장 선호하는<br>개발 프레임워크</span>
         </div>
       </div>
       <div class="card-ui">
