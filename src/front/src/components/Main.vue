@@ -17,7 +17,8 @@
 
       <!-- background video -->
       <div class="video-layout">
-        <iframe class="background-video" width="100%" height="100%" src="https://www.youtube.com/embed/403MNBVmC9w?autoplay=1&mute=1&controls=0&loop=0" title="" frameborder="0" allow="autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <video class="background-video" src="../assets/video-file/4thevision-brand-web.mp4" autoplay loop muted/>
+<!--        <iframe class="background-video" width="100%" height="100%" src="https://www.youtube.com/embed/403MNBVmC9w?autoplay=1&mute=1&controls=0&loop=0" title="" frameborder="0" allow="autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
       </div>
 
     </div>
@@ -79,6 +80,7 @@ h1 span {
 
   .background-video {
     width: 100%;
+    height: auto;
   }
 }
 
@@ -112,6 +114,20 @@ h1 span {
 
   .main-button {
     font-size: 1rem;
+  }
+
+  .video-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .background-video {
+    width: auto;
+    height: auto;
   }
 
 }
